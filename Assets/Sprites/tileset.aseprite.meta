@@ -117,7 +117,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: TWall2
+  - name: Grid
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -126,9 +126,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 64
-      height: 56
-    spriteID: bc60e9e6a43d5dc75959c1fa56e3b0ce
+      width: 960
+      height: 540
+    spriteID: da22ed355bf2a6deaa8e2647f9f4a7b4
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -137,166 +137,6 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  - name: TROuterCorner
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 76
-      y: 4
-      width: 64
-      height: 56
-    spriteID: 175dd327ff710a0a38e8b5beb5d761e5
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 76, y: 4}
-  - name: TWall1
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 148
-      y: 4
-      width: 64
-      height: 56
-    spriteID: 5bdbc12c6e553a267a6edb55e25bca8b
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 148, y: 4}
-  - name: TLOuterCorner
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 68
-      width: 64
-      height: 56
-    spriteID: b964a7f97fc3e07efa07a3d53ebb2e08
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 68}
-  - name: LWall
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 76
-      y: 68
-      width: 64
-      height: 56
-    spriteID: afb71edc53f0e9b51a3bfa5d41737004
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 76, y: 68}
-  - name: RWall
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 148
-      y: 68
-      width: 64
-      height: 56
-    spriteID: 54aaff6880af3bd24a47b2582cc4decf
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 148, y: 68}
-  - name: BROuterCorner
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 132
-      width: 64
-      height: 56
-    spriteID: 89c7b378dc5bae5308b68bbe921a5ad7
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 132}
-  - name: BLOuterCorner
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 76
-      y: 132
-      width: 64
-      height: 56
-    spriteID: 9bdc6212d8052014685dcc96ffd90393
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 76, y: 132}
-  - name: bottomWall
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 148
-      y: 132
-      width: 64
-      height: 56
-    spriteID: 564dc6e2d1f69bd7981e2d2798550bfc
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 148, y: 132}
   - name: floor2
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -304,11 +144,11 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 196
+      x: 220
+      y: 552
       width: 64
       height: 56
-    spriteID: 6ef77378a992041329e5d74d9454c299
+    spriteID: 21fae7482898dee44904d5235fec141d
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -316,7 +156,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 196}
+    uvTransform: {x: 220, y: 552}
   - name: floor1
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -324,11 +164,11 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 76
-      y: 196
+      x: 292
+      y: 552
       width: 64
       height: 56
-    spriteID: 5c1d8d5ad1034e59db3655ba31d78a05
+    spriteID: 0fde630ade1c5b28f8a663a5a513fd58
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -336,7 +176,447 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 76, y: 196}
+    uvTransform: {x: 292, y: 552}
+  - name: BWall2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 364
+      y: 552
+      width: 64
+      height: 56
+    spriteID: c7511929a64170eb7b37c875d7dc5ab2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 364, y: 552}
+  - name: TWall2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 436
+      y: 552
+      width: 64
+      height: 56
+    spriteID: 08705813e91e7a7b69926838eb2dd468
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 436, y: 552}
+  - name: Layer 1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 508
+      y: 552
+      width: 64
+      height: 56
+    spriteID: 0fc7def9285dec714b486b5ae5a668d4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 508, y: 552}
+  - name: TWall1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 580
+      y: 552
+      width: 64
+      height: 56
+    spriteID: 2e59879ba852b78d59f8ff9ce28d557b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 580, y: 552}
+  - name: TLOuterCorner
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 652
+      y: 552
+      width: 64
+      height: 56
+    spriteID: 3ac9ffac307a9abc4881d1ef1cb3097e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 652, y: 552}
+  - name: TROuterCorner
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 724
+      y: 552
+      width: 64
+      height: 56
+    spriteID: 419bcb1df9d8ba75696646148031c472
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 724, y: 552}
+  - name: Layer 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 148
+      y: 552
+      width: 64
+      height: 57
+    spriteID: cea7c03176ac0c81fbd40fa7a75c36d3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 148, y: 552}
+  - name: LWall
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 796
+      y: 552
+      width: 64
+      height: 56
+    spriteID: 02308cd4c0b65435eaf462ba5a70d488
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 796, y: 552}
+  - name: RWall
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 868
+      y: 552
+      width: 64
+      height: 56
+    spriteID: f84c1958a32c4fdf599b634691ae6a48
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 868, y: 552}
+  - name: BROuterCorner
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 940
+      y: 552
+      width: 64
+      height: 56
+    spriteID: eb3f81f857516a4d5a0e9850f643cc6b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 940, y: 552}
+  - name: BLOuterCorner
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 621
+      width: 64
+      height: 56
+    spriteID: b04a10ef30b08ea13be4c20555764978
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 621}
+  - name: BLOuterCorner2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 76
+      y: 621
+      width: 64
+      height: 56
+    spriteID: 05aa64478c70cae28bb81cc1ab9eb483
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 76, y: 621}
+  - name: BROuterCorner2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 148
+      y: 621
+      width: 64
+      height: 56
+    spriteID: 9c0de19756a02c73eabde472400ef204
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 148, y: 621}
+  - name: bottomWall
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 220
+      y: 621
+      width: 64
+      height: 56
+    spriteID: 058e83fc0f24e88e4a16a49b9c99a568
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 220, y: 621}
+  - name: BRInnerCorner
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 292
+      y: 621
+      width: 64
+      height: 56
+    spriteID: a3b982e8dc1db241da1d28ef5eb844ca
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 292, y: 621}
+  - name: BLInnerCorner
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 364
+      y: 621
+      width: 64
+      height: 56
+    spriteID: c142f7667a4309c21a38374c96320ec4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 364, y: 621}
+  - name: BRInnerCorner2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 436
+      y: 621
+      width: 64
+      height: 56
+    spriteID: d21b023d2e298be7f987e862ccce83b6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 436, y: 621}
+  - name: BLInnerCorner_1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 508
+      y: 621
+      width: 64
+      height: 56
+    spriteID: f51974db79b22d702b5e9c25bed3b3ef
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 508, y: 621}
+  - name: TRInnerCorner
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 580
+      y: 621
+      width: 64
+      height: 56
+    spriteID: a16877f70f49f69ea9a1494f645b763d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 580, y: 621}
+  - name: TLInnerCorner
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 652
+      y: 621
+      width: 64
+      height: 56
+    spriteID: 66eb3e01e906eb589bcfca1df4eaf8f3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 652, y: 621}
+  - name: TRInnerCorner2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 76
+      y: 552
+      width: 64
+      height: 60
+    spriteID: 65732923a0b1e544c8e61a2f1cb5e10b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 76, y: 552}
+  - name: TLInnerCorner2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 552
+      width: 64
+      height: 61
+    spriteID: 312e593102d27a7a696ef8e559e7d0c1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 552}
   spriteSheetImportData:
   - name: fttileset1_0
     originalName: 
@@ -579,172 +859,27 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   asepriteLayers:
-  - layerIndex: 1
-    guid: -307246146
-    name: tiles
-    layerFlags: 35
-    layerType: 1
-    blendMode: 0
-    cells: []
-    linkedCells: []
-    parentIndex: -1
-  - layerIndex: 2
-    guid: 1614464282
-    name: TWall2
-    layerFlags: 2
-    layerType: 0
-    blendMode: 0
-    cells:
-    - name: TWall2
-      frameIndex: 0
-      cellRect:
-        x: 245
-        y: 456
-        width: 64
-        height: 56
-      spriteId: bc60e9e6a43d5dc75959c1fa56e3b0ce
-    linkedCells: []
-    parentIndex: 1
-  - layerIndex: 3
-    guid: -883893567
-    name: TROuterCorner
-    layerFlags: 2
-    layerType: 0
-    blendMode: 0
-    cells:
-    - name: TROuterCorner
-      frameIndex: 0
-      cellRect:
-        x: 392
-        y: 316
-        width: 64
-        height: 56
-      spriteId: 175dd327ff710a0a38e8b5beb5d761e5
-    linkedCells: []
-    parentIndex: 1
-  - layerIndex: 4
-    guid: -1490335745
-    name: TWall1
-    layerFlags: 2
-    layerType: 0
-    blendMode: 0
-    cells:
-    - name: TWall1
-      frameIndex: 0
-      cellRect:
-        x: 294
-        y: 316
-        width: 64
-        height: 56
-      spriteId: 5bdbc12c6e553a267a6edb55e25bca8b
-    linkedCells: []
-    parentIndex: 1
-  - layerIndex: 5
-    guid: 1357808185
-    name: TLOuterCorner
-    layerFlags: 2
-    layerType: 0
-    blendMode: 0
-    cells:
-    - name: TLOuterCorner
-      frameIndex: 0
-      cellRect:
-        x: 147
-        y: 288
-        width: 64
-        height: 56
-      spriteId: b964a7f97fc3e07efa07a3d53ebb2e08
-    linkedCells: []
-    parentIndex: 1
-  - layerIndex: 6
-    guid: -1176215724
-    name: LWall
-    layerFlags: 2
-    layerType: 0
-    blendMode: 0
-    cells:
-    - name: LWall
-      frameIndex: 0
-      cellRect:
-        x: 98
-        y: 204
-        width: 64
-        height: 56
-      spriteId: afb71edc53f0e9b51a3bfa5d41737004
-    linkedCells: []
-    parentIndex: 1
-  - layerIndex: 7
-    guid: -1171836809
-    name: RWall
-    layerFlags: 2
-    layerType: 0
-    blendMode: 0
-    cells:
-    - name: RWall
-      frameIndex: 0
-      cellRect:
-        x: 343
-        y: 176
-        width: 64
-        height: 56
-      spriteId: 54aaff6880af3bd24a47b2582cc4decf
-    linkedCells: []
-    parentIndex: 1
-  - layerIndex: 8
-    guid: 2002706468
-    name: BROuterCorner
-    layerFlags: 2
-    layerType: 0
-    blendMode: 0
-    cells:
-    - name: BROuterCorner
-      frameIndex: 0
-      cellRect:
-        x: 343
-        y: 64
-        width: 64
-        height: 56
-      spriteId: 89c7b378dc5bae5308b68bbe921a5ad7
-    linkedCells: []
-    parentIndex: 1
-  - layerIndex: 9
-    guid: -50559057
-    name: BLOuterCorner
-    layerFlags: 2
-    layerType: 0
-    blendMode: 0
-    cells:
-    - name: BLOuterCorner
-      frameIndex: 0
-      cellRect:
-        x: 147
-        y: 64
-        width: 64
-        height: 56
-      spriteId: 9bdc6212d8052014685dcc96ffd90393
-    linkedCells: []
-    parentIndex: 1
-  - layerIndex: 10
-    guid: 155979667
-    name: bottomWall
+  - layerIndex: 0
+    guid: -254172158
+    name: Grid
     layerFlags: 3
     layerType: 0
     blendMode: 0
     cells:
-    - name: bottomWall
+    - name: Grid
       frameIndex: 0
       cellRect:
-        x: 245
-        y: 64
-        width: 64
-        height: 56
-      spriteId: 564dc6e2d1f69bd7981e2d2798550bfc
+        x: 0
+        y: 0
+        width: 960
+        height: 540
+      spriteId: da22ed355bf2a6deaa8e2647f9f4a7b4
     linkedCells: []
-    parentIndex: 1
-  - layerIndex: 11
-    guid: -1800874607
+    parentIndex: -1
+  - layerIndex: 1
+    guid: -1800874597
     name: floor2
-    layerFlags: 2
+    layerFlags: 3
     layerType: 0
     blendMode: 0
     cells:
@@ -755,13 +890,13 @@ ScriptedImporter:
         y: 232
         width: 64
         height: 56
-      spriteId: 6ef77378a992041329e5d74d9454c299
+      spriteId: 21fae7482898dee44904d5235fec141d
     linkedCells: []
-    parentIndex: 1
-  - layerIndex: 12
-    guid: -610707343
+    parentIndex: -1
+  - layerIndex: 2
+    guid: -610707329
     name: floor1
-    layerFlags: 2
+    layerFlags: 3
     layerType: 0
     blendMode: 0
     cells:
@@ -772,9 +907,383 @@ ScriptedImporter:
         y: 148
         width: 64
         height: 56
-      spriteId: 5c1d8d5ad1034e59db3655ba31d78a05
+      spriteId: 0fde630ade1c5b28f8a663a5a513fd58
     linkedCells: []
-    parentIndex: 1
+    parentIndex: -1
+  - layerIndex: 3
+    guid: 1608460845
+    name: BWall2
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: BWall2
+      frameIndex: 0
+      cellRect:
+        x: 472
+        y: 137
+        width: 64
+        height: 56
+      spriteId: c7511929a64170eb7b37c875d7dc5ab2
+    linkedCells: []
+    parentIndex: -1
+  - layerIndex: 4
+    guid: 1614464284
+    name: TWall2
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: TWall2
+      frameIndex: 0
+      cellRect:
+        x: 49
+        y: 400
+        width: 64
+        height: 56
+      spriteId: 08705813e91e7a7b69926838eb2dd468
+    linkedCells: []
+    parentIndex: -1
+  - layerIndex: 5
+    guid: 1317222749
+    name: Layer 1
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Layer 1
+      frameIndex: 0
+      cellRect:
+        x: 490
+        y: 316
+        width: 64
+        height: 56
+      spriteId: 0fc7def9285dec714b486b5ae5a668d4
+    linkedCells: []
+    parentIndex: -1
+  - layerIndex: 6
+    guid: -1490335747
+    name: TWall1
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: TWall1
+      frameIndex: 0
+      cellRect:
+        x: 196
+        y: 372
+        width: 64
+        height: 56
+      spriteId: 2e59879ba852b78d59f8ff9ce28d557b
+    linkedCells: []
+    parentIndex: -1
+  - layerIndex: 7
+    guid: 1357808187
+    name: TLOuterCorner
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: TLOuterCorner
+      frameIndex: 0
+      cellRect:
+        x: 147
+        y: 288
+        width: 64
+        height: 56
+      spriteId: 3ac9ffac307a9abc4881d1ef1cb3097e
+    linkedCells: []
+    parentIndex: -1
+  - layerIndex: 8
+    guid: -883893558
+    name: TROuterCorner
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: TROuterCorner
+      frameIndex: 0
+      cellRect:
+        x: 392
+        y: 372
+        width: 64
+        height: 56
+      spriteId: 419bcb1df9d8ba75696646148031c472
+    linkedCells: []
+    parentIndex: -1
+  - layerIndex: 9
+    guid: 1317221560
+    name: Layer 2
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Layer 2
+      frameIndex: 0
+      cellRect:
+        x: 294
+        y: 371
+        width: 64
+        height: 57
+      spriteId: cea7c03176ac0c81fbd40fa7a75c36d3
+    linkedCells: []
+    parentIndex: -1
+  - layerIndex: 10
+    guid: -1176215720
+    name: LWall
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: LWall
+      frameIndex: 0
+      cellRect:
+        x: 343
+        y: 64
+        width: 64
+        height: 56
+      spriteId: 02308cd4c0b65435eaf462ba5a70d488
+    linkedCells: []
+    parentIndex: -1
+  - layerIndex: 11
+    guid: -1171836805
+    name: RWall
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: RWall
+      frameIndex: 0
+      cellRect:
+        x: 735
+        y: 288
+        width: 64
+        height: 56
+      spriteId: f84c1958a32c4fdf599b634691ae6a48
+    linkedCells: []
+    parentIndex: -1
+  - layerIndex: 12
+    guid: 2002706464
+    name: BROuterCorner
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: BROuterCorner
+      frameIndex: 0
+      cellRect:
+        x: 497
+        y: 215
+        width: 64
+        height: 56
+      spriteId: eb3f81f857516a4d5a0e9850f643cc6b
+    linkedCells: []
+    parentIndex: -1
+  - layerIndex: 13
+    guid: -50559061
+    name: BLOuterCorner
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: BLOuterCorner
+      frameIndex: 0
+      cellRect:
+        x: 44
+        y: 119
+        width: 64
+        height: 56
+      spriteId: b04a10ef30b08ea13be4c20555764978
+    linkedCells: []
+    parentIndex: -1
+  - layerIndex: 14
+    guid: -1301924170
+    name: BLOuterCorner2
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: BLOuterCorner2
+      frameIndex: 0
+      cellRect:
+        x: 147
+        y: 64
+        width: 64
+        height: 56
+      spriteId: 05aa64478c70cae28bb81cc1ab9eb483
+    linkedCells: []
+    parentIndex: -1
+  - layerIndex: 15
+    guid: 634223957
+    name: BROuterCorner2
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: BROuterCorner2
+      frameIndex: 0
+      cellRect:
+        x: 245
+        y: 64
+        width: 64
+        height: 56
+      spriteId: 9c0de19756a02c73eabde472400ef204
+    linkedCells: []
+    parentIndex: -1
+  - layerIndex: 16
+    guid: 155979657
+    name: bottomWall
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: bottomWall
+      frameIndex: 0
+      cellRect:
+        x: 294
+        y: 92
+        width: 64
+        height: 56
+      spriteId: 058e83fc0f24e88e4a16a49b9c99a568
+    linkedCells: []
+    parentIndex: -1
+  - layerIndex: 17
+    guid: 550537668
+    name: BRInnerCorner
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: BRInnerCorner
+      frameIndex: 0
+      cellRect:
+        x: 784
+        y: 148
+        width: 64
+        height: 56
+      spriteId: a3b982e8dc1db241da1d28ef5eb844ca
+    linkedCells: []
+    parentIndex: -1
+  - layerIndex: 18
+    guid: -1254970639
+    name: BLInnerCorner
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: BLInnerCorner
+      frameIndex: 0
+      cellRect:
+        x: 343
+        y: 120
+        width: 64
+        height: 56
+      spriteId: c142f7667a4309c21a38374c96320ec4
+    linkedCells: []
+    parentIndex: -1
+  - layerIndex: 19
+    guid: -219325420
+    name: BRInnerCorner2
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: BRInnerCorner2
+      frameIndex: 0
+      cellRect:
+        x: 686
+        y: 148
+        width: 64
+        height: 56
+      spriteId: d21b023d2e298be7f987e862ccce83b6
+    linkedCells: []
+    parentIndex: -1
+  - layerIndex: 20
+    guid: 293667117
+    name: BLInnerCorner_1
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: BLInnerCorner_1
+      frameIndex: 0
+      cellRect:
+        x: 355
+        y: 185
+        width: 64
+        height: 56
+      spriteId: f51974db79b22d702b5e9c25bed3b3ef
+    linkedCells: []
+    parentIndex: -1
+  - layerIndex: 21
+    guid: -1366669594
+    name: TRInnerCorner
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: TRInnerCorner
+      frameIndex: 0
+      cellRect:
+        x: 588
+        y: 316
+        width: 64
+        height: 56
+      spriteId: a16877f70f49f69ea9a1494f645b763d
+    linkedCells: []
+    parentIndex: -1
+  - layerIndex: 22
+    guid: 1122789399
+    name: TLInnerCorner
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: TLInnerCorner
+      frameIndex: 0
+      cellRect:
+        x: 341
+        y: 430
+        width: 64
+        height: 56
+      spriteId: 66eb3e01e906eb589bcfca1df4eaf8f3
+    linkedCells: []
+    parentIndex: -1
+  - layerIndex: 23
+    guid: -2136532686
+    name: TRInnerCorner2
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: TRInnerCorner2
+      frameIndex: 0
+      cellRect:
+        x: 686
+        y: 372
+        width: 64
+        height: 60
+      spriteId: 65732923a0b1e544c8e61a2f1cb5e10b
+    linkedCells: []
+    parentIndex: -1
+  - layerIndex: 24
+    guid: 1309096279
+    name: TLInnerCorner2
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: TLInnerCorner2
+      frameIndex: 0
+      cellRect:
+        x: 448
+        y: 421
+        width: 64
+        height: 61
+      spriteId: 312e593102d27a7a696ef8e559e7d0c1
+    linkedCells: []
+    parentIndex: -1
   platformSettings:
   - name: DefaultTexturePlatform
     overridden: 0
