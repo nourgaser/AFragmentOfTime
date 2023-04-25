@@ -2,8 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-abstract public class FTGameObject
+abstract public class FTGameObject : MonoBehaviour
 {
-    int health;
+    public int health;
     
 }

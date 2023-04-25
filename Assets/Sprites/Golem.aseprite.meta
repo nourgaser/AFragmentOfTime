@@ -119,7 +119,7 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: Golem_Frame_0
     originalName: 
-    pivot: {x: 0.5, y: -0.10909091}
+    pivot: {x: 0.50255966, y: 0.13653879}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -139,7 +139,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 4}
   - name: Golem_Frame_1
     originalName: 
-    pivot: {x: 0.5, y: -0.10909091}
+    pivot: {x: 0.50000006, y: 0.114944875}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:

@@ -1,8 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
-abstract public class FTCharacter: FTGameObject
+abstract public class FTCharacter : FTMoveableObject
 {
-    int moves;
+    public int steps;
+    public int maxSteps;
+    public abstract void takeStep();
+    public Action stepTaken;
+
 }

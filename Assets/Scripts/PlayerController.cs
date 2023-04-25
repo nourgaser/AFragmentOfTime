@@ -2,16 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController : FTMoveableObject
+public class PlayerController : MonoBehaviour
 {
-    private new void Update()
+    public Player player;
+    private void Update()
     {
-        base.Update();
-        if (Input.GetKeyDown(KeyCode.Q)) { GoNorthWest(); }
-        if (Input.GetKeyDown(KeyCode.W)) { GoNorth(); }
-        if (Input.GetKeyDown(KeyCode.E)) { GoNorthEast(); }
-        if (Input.GetKeyDown(KeyCode.A)) { GoSouthWest(); }
-        if (Input.GetKeyDown(KeyCode.S)) { GoSouth(); }
-        if (Input.GetKeyDown(KeyCode.D)) { GoSouthEast(); }
+        if (Input.GetKeyDown(KeyCode.Q)) { player.goNorthWest(); }
+        if (Input.GetKeyDown(KeyCode.W)) { player.goNorth(); }
+        if (Input.GetKeyDown(KeyCode.E)) { player.goNorthEast(); } 
+        if (Input.GetKeyDown(KeyCode.A)) { player.goSouthWest(); }
+        if (Input.GetKeyDown(KeyCode.S)) { player.goSouth(); }
+        if (Input.GetKeyDown(KeyCode.D)) { player.goSouthEast(); }
     }
 }

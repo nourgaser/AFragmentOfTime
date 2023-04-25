@@ -1,15 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Tilemaps;
 public class FTGrid : MonoBehaviour
 {
     private static FTGrid instance;
 
     private Grid grid;
-    public static int MinX { get; private set; } = -5;
-    public static int MaxX { get; private set; } = 5;
-    public static int MinY { get; private set; } = -5;
-    public static int MaxY { get; private set; } = 5;
 
     private void Awake()
     {
@@ -24,8 +21,8 @@ public class FTGrid : MonoBehaviour
         return instance.grid.GetCellCenterLocal(cellPosition);
     }
 
-    public static bool OutOfBounds(Vector3Int cellPosition)
-    {
-        return false;
-    }
+    public static Tilemap[] Tilemaps { get {
+        return instance.grid.GetComponentsInChildren<Tilemap>(true);
+    } }
+
 }

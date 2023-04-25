@@ -1,45 +1,93 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-abstract public class FTMoveableObject : MonoBehaviour
+using UnityEngine.Tilemaps;
+using System;
+abstract public class FTMoveableObject : FTGameObject
 {
     [SerializeField] Vector3Int currentPos;
+    public Action moved;
 
     protected virtual void Update()
     {
+
         transform.position = FTGrid.GetCellCenterWorld(currentPos);
     }
 
-    public void GoNorth() { currentPos.x += 1; Clamp(); }
-    public void GoSouth() { currentPos.x -= 1; Clamp(); }
-    public void GoNorthEast()
+    public void goNorth()
     {
-        if (currentPos.y % 2 != 0) currentPos.x += 1;
-        currentPos.y += 1;
-        Clamp();
+        var temp = currentPos;
+        temp.x += 1;
+        if (isValidMove(temp))
+        {
+            currentPos = temp;
+            moved?.Invoke();
+        }
     }
-    public void GoNorthWest()
+    public void goSouth()
     {
-        if (currentPos.y % 2 != 0) currentPos.x += 1;
-        currentPos.y -= 1;
-        Clamp();
+        var temp = currentPos;
+        temp.x -= 1;
+        if (isValidMove(temp))
+        {
+            currentPos = temp;
+            moved?.Invoke();
+        }
     }
-    public void GoSouthEast()
+    public void goNorthEast()
     {
-        if (currentPos.y % 2 == 0) currentPos.x -= 1;
-        currentPos.y += 1;
-        Clamp();
+        var temp = currentPos;
+        if (temp.y % 2 != 0) temp.x += 1;
+        temp.y += 1;
+        if (isValidMove(temp))
+        {
+            currentPos = temp;
+            moved?.Invoke();
+        }
     }
-    public void GoSouthWest()
+    public void goNorthWest()
     {
-        if (currentPos.y % 2 == 0) currentPos.x -= 1;
-        currentPos.y -= 1;
-        Clamp();
+        var temp = currentPos;
+        if (temp.y % 2 != 0) temp.x += 1;
+        temp.y -= 1;
+        if (isValidMove(temp))
+        {
+            currentPos = temp;
+            moved?.Invoke();
+        }
     }
-    private void Clamp()
+    public void goSouthEast()
     {
-        currentPos.x = Mathf.Clamp(currentPos.x, FTGrid.MinX, FTGrid.MaxX);
-        currentPos.y = Mathf.Clamp(currentPos.y, FTGrid.MinY, FTGrid.MaxY);
+        var temp = currentPos;
+        if (temp.y % 2 == 0) temp.x -= 1;
+        temp.y += 1;
+        if (isValidMove(temp))
+        {
+            currentPos = temp;
+            moved?.Invoke();
+        }
+    }
+    public void goSouthWest()
+    {
+        var temp = currentPos;
+        if (temp.y % 2 == 0) temp.x -= 1;
+        temp.y -= 1;
+        if (isValidMove(temp))
+        {
+            currentPos = temp;
+            endStep();
+        }
+    }
+
+    public bool isValidMove(Vector3Int pos)
+    {
+        Tilemap tilemap = FTGrid.Tilemaps[0];
+        TileBase tile = tilemap.GetTile(pos);
+        return tile.name.Contains("floor", System.StringComparison.OrdinalIgnoreCase);
+    }
+
+    private void endStep()
+    {
+        moved?.Invoke();
     }
 }
