@@ -5,5 +5,5 @@ using UnityEngine;
 abstract public class FTGameObject : MonoBehaviour
 {
     public int health;
-    
+    [SerializeField] protected Vector3Int currentPos;
 }

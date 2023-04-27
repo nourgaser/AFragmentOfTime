@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e0bc6bab59be922cdbc1659b25db403f
+guid: de42f43badb863ec78f3c892b5adc6d7
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -30,7 +30,7 @@ ScriptedImporter:
     sRGBTexture: 1
     spriteMode: 2
     spriteExtrude: 1
-    spriteMeshType: 0
+    spriteMeshType: 1
     alignment: 0
     spritePivot: {x: 0.5, y: 0.5}
     spritePixelsToUnits: 64
@@ -93,7 +93,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638181001790267140
+  platformSettingsDirtyTick: 638181913198455540
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -117,38 +117,18 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: capeman_idle_6fps_Frame_0
+  - name: tl
     originalName: 
-    pivot: {x: 0.5, y: 0.18}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 67
-      y: 72
-      width: 52
-      height: 60
-    spriteID: f91e4d73f52dcf378a62e4f5ed7bdefe
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 67, y: 72}
-  - name: capeman_idle_6fps_Frame_1
-    originalName: 
-    pivot: {x: 0.4716981, y: 0.18}
+    pivot: {x: 0.5208334, y: 0.19032258}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 72
-      width: 53
-      height: 60
-    spriteID: 5ab65af74202e5ae1a02b04c9bc2ad64
+      y: 144
+      width: 48
+      height: 62
+    spriteID: 37351f9531d588b2795b4518e41c83c8
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -156,19 +136,19 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 72}
-  - name: capeman_idle_6fps_Frame_2
+    uvTransform: {x: 4, y: 144}
+  - name: tl_Frame_1
     originalName: 
-    pivot: {x: 0.47272727, y: 0.18}
+    pivot: {x: 0.4814815, y: 0.19032258}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 55
-      height: 60
-    spriteID: 48f96721ee2c2390185e1a4988ca9830
+      width: 54
+      height: 62
+    spriteID: 6c46f28b5a31db610aafae4b74e81a19
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -177,38 +157,18 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  - name: capeman_idle_6fps_Frame_3
+  - name: tl_Frame_2
     originalName: 
-    pivot: {x: 0.4901961, y: 0.18}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 67
-      y: 140
-      width: 51
-      height: 60
-    spriteID: 2c995a5aa2a1f1a358b7f01a08e6cafe
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 67, y: 140}
-  - name: capeman_idle_6fps_Frame_4
-    originalName: 
-    pivot: {x: 0.509434, y: 0.18}
+    pivot: {x: 0.5283019, y: 0.19032258}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 140
+      y: 74
       width: 53
-      height: 60
-    spriteID: e319e4667991244a98f894e7ea63d12f
+      height: 62
+    spriteID: 1e1cb625230d5bcaeb40d6f42686322d
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -216,19 +176,19 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 140}
-  - name: capeman_idle_6fps_Frame_5
+    uvTransform: {x: 4, y: 74}
+  - name: tl_Frame_3
     originalName: 
-    pivot: {x: 0.5283019, y: 0.18}
+    pivot: {x: 0.5106383, y: 0.19032258}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 67
+      x: 66
       y: 4
-      width: 53
-      height: 60
-    spriteID: 2be88c0ed9db2f45d8545f66b77a64d7
+      width: 47
+      height: 62
+    spriteID: e0fdb4ed5b0bd7cd0b1141bf8c61db23
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -236,64 +196,48 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 67, y: 4}
+    uvTransform: {x: 66, y: 4}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 1799654826
-    name: capeman_idle_6fps
+    guid: -1690236026
+    name: tl
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: capeman_idle_6fps_Frame_0
+    - name: tl_Frame_0
       frameIndex: 0
       cellRect:
-        x: 38
-        y: 2
-        width: 52
-        height: 60
-      spriteId: f91e4d73f52dcf378a62e4f5ed7bdefe
-    - name: capeman_idle_6fps_Frame_1
+        x: 7
+        y: 1
+        width: 48
+        height: 62
+      spriteId: 37351f9531d588b2795b4518e41c83c8
+    - name: tl_Frame_1
       frameIndex: 1
       cellRect:
-        x: 39
-        y: 2
-        width: 53
-        height: 60
-      spriteId: 5ab65af74202e5ae1a02b04c9bc2ad64
-    - name: capeman_idle_6fps_Frame_2
-      frameIndex: 2
-      cellRect:
-        x: 38
-        y: 2
-        width: 55
-        height: 60
-      spriteId: 48f96721ee2c2390185e1a4988ca9830
-    - name: capeman_idle_6fps_Frame_3
+        x: 6
+        y: 1
+        width: 54
+        height: 62
+      spriteId: 6c46f28b5a31db610aafae4b74e81a19
+    - name: tl_Frame_3
       frameIndex: 3
       cellRect:
-        x: 39
-        y: 2
-        width: 51
-        height: 60
-      spriteId: 2c995a5aa2a1f1a358b7f01a08e6cafe
-    - name: capeman_idle_6fps_Frame_4
-      frameIndex: 4
-      cellRect:
-        x: 37
-        y: 2
+        x: 4
+        y: 1
         width: 53
-        height: 60
-      spriteId: e319e4667991244a98f894e7ea63d12f
-    - name: capeman_idle_6fps_Frame_5
-      frameIndex: 5
+        height: 62
+      spriteId: 1e1cb625230d5bcaeb40d6f42686322d
+    - name: tl_Frame_2
+      frameIndex: 2
       cellRect:
-        x: 36
-        y: 2
-        width: 53
-        height: 60
-      spriteId: 2be88c0ed9db2f45d8545f66b77a64d7
+        x: 8
+        y: 1
+        width: 47
+        height: 62
+      spriteId: e0fdb4ed5b0bd7cd0b1141bf8c61db23
     linkedCells: []
     parentIndex: -1
   platformSettings:
@@ -365,4 +309,4 @@ ScriptedImporter:
     androidETC2FallbackOverride: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 128, y: 64}
+  canvasSize: {x: 64, y: 64}

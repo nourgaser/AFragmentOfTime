@@ -33,7 +33,7 @@ ScriptedImporter:
     spriteMeshType: 1
     alignment: 0
     spritePivot: {x: 0.5, y: 0.5}
-    spritePixelsToUnits: 100
+    spritePixelsToUnits: 64
     spriteBorder: {x: 0, y: 0, z: 0, w: 0}
     spriteGenerateFallbackPhysicsShape: 0
     generateCubemap: 6
@@ -70,8 +70,8 @@ ScriptedImporter:
     applyGammaDecoding: 0
   previousAsepriteImporterSettings:
     fileImportMode: 1
-    importHiddenLayers: 0
-    layerImportMode: 1
+    importHiddenLayers: 1
+    layerImportMode: 0
     defaultPivotSpace: 0
     defaultPivotAlignment: 7
     customPivotPosition: {x: 0.5, y: 0.5}
@@ -82,8 +82,8 @@ ScriptedImporter:
     addShadowCasters: 0
   asepriteImporterSettings:
     fileImportMode: 1
-    importHiddenLayers: 0
-    layerImportMode: 1
+    importHiddenLayers: 1
+    layerImportMode: 0
     defaultPivotSpace: 0
     defaultPivotAlignment: 7
     customPivotPosition: {x: 0.5, y: 0.5}
@@ -93,7 +93,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 0
+  platformSettingsDirtyTick: 638181843776365480
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -117,9 +117,9 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: capeman_prespectives
+  - name: Layer 1_Frame_0
     originalName: 
-    pivot: {x: 0.5147679, y: -0.06285714}
+    pivot: {x: 0.5147679, y: -0.07051282}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -127,8 +127,8 @@ ScriptedImporter:
       x: 4
       y: 4
       width: 237
-      height: 175
-    spriteID: bbe741de6e4088f27b101ee36a5da423
+      height: 156
+    spriteID: b0127ebb453a4a7fa8ea2253acbed8e2
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -137,26 +137,1071 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
+  - name: capeman_Frame_0
+    originalName: 
+    pivot: {x: 0.4827586, y: -0.48387098}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 52
+      y: 168
+      width: 29
+      height: 62
+    spriteID: 3c17cfaec3184dce8b4d40f1112a7272
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 52, y: 168}
+  - name: capeman_Frame_0
+    originalName: 
+    pivot: {x: 2.775, y: -0.46666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 168
+      width: 40
+      height: 60
+    spriteID: b771bbf7a215cf757aa1270deba3a8c9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 168}
+  - name: capeman_Frame_0
+    originalName: 
+    pivot: {x: 0.37931034, y: -2.0166667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 52
+      y: 238
+      width: 29
+      height: 60
+    spriteID: 01b76c3457b8641e98f335ec22b8133f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 52, y: 238}
+  - name: capeman_Frame_0
+    originalName: 
+    pivot: {x: 2.75, y: -2.0333333}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 236
+      width: 40
+      height: 60
+    spriteID: 521920710c12619e099a7fa99d604de2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 236}
+  - name: capeman_Frame_0
+    originalName: 
+    pivot: {x: -2.3333335, y: -0.46774194}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 372
+      width: 30
+      height: 62
+    spriteID: 67fdce48f99bceb4d84fd52cb593b315
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 372}
+  - name: capeman_Frame_0
+    originalName: 
+    pivot: {x: -2.3666668, y: -1.9999999}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 442
+      width: 30
+      height: 62
+    spriteID: e79b1f0aec02d825eb4e04a80c7ea0ab
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 442}
+  - name: ellipse_guide_Frame_0
+    originalName: 
+    pivot: {x: 0.5106383, y: -1.5666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 89
+      y: 168
+      width: 47
+      height: 30
+    spriteID: 52bfaa69f8215de5695bdb043d25c315
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 89, y: 168}
+  - name: orbs_back_Frame_0
+    originalName: 
+    pivot: {x: 0.5106383, y: -3.7058823}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 204
+      y: 168
+      width: 47
+      height: 17
+    spriteID: 208fe8096f1c93662abd78bcb82ae987
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 204, y: 168}
+  - name: orbs_Frame_0
+    originalName: 
+    pivot: {x: 0.5192308, y: -2.4444444}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 144
+      y: 168
+      width: 52
+      height: 18
+    spriteID: 7fc58486a27c4651bb522d1fd6d7493a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 144, y: 168}
+  - name: ellipse_guide_Frame_0
+    originalName: 
+    pivot: {x: 2.4255319, y: -1.7666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 89
+      y: 206
+      width: 47
+      height: 30
+    spriteID: c0221198399ff7aba9ee2eadeff9d9ad
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 89, y: 206}
+  - name: orbs_back_Frame_0
+    originalName: 
+    pivot: {x: 2.4255319, y: -4.058823}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 204
+      y: 194
+      width: 47
+      height: 17
+    spriteID: 3e7cc9ad24e0a6f9b87b3325c90b7646
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 204, y: 194}
+  - name: orbs_Frame_0
+    originalName: 
+    pivot: {x: 2.25, y: -2.777778}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 144
+      y: 194
+      width: 52
+      height: 18
+    spriteID: 95854bf957ab916719ddca362b479eaf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 144, y: 194}
+  - name: ellipse_guide_Frame_0
+    originalName: 
+    pivot: {x: 0.4042553, y: -4.6}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 89
+      y: 244
+      width: 47
+      height: 30
+    spriteID: 62d82a7c5bd43dc7ba150997f46fd68c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 89, y: 244}
+  - name: orbs_back_Frame_0
+    originalName: 
+    pivot: {x: 0.4042553, y: -9.058824}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 204
+      y: 220
+      width: 47
+      height: 17
+    spriteID: 9d9957b17e1cd2df0aecfc6087f97b1a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 204, y: 220}
+  - name: orbs_Frame_0
+    originalName: 
+    pivot: {x: 0.42307693, y: -7.5000005}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 144
+      y: 220
+      width: 52
+      height: 18
+    spriteID: a1e27ed29612dfdfc8af8667979fd586
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 144, y: 220}
+  - name: ellipse_guide_Frame_0
+    originalName: 
+    pivot: {x: 2.4042552, y: -4.7}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 89
+      y: 282
+      width: 47
+      height: 30
+    spriteID: 69d9edc7d0d0c386c9225b952ee84aed
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 89, y: 282}
+  - name: orbs_back_Frame_0
+    originalName: 
+    pivot: {x: 2.4042552, y: -9.235293}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 204
+      y: 246
+      width: 47
+      height: 17
+    spriteID: d8a8e165621b2ced0a9c39e2e018ab4d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 204, y: 246}
+  - name: orbs_Frame_0
+    originalName: 
+    pivot: {x: 2.2307694, y: -7.6666665}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 144
+      y: 246
+      width: 52
+      height: 18
+    spriteID: 4daf42ae426a060c79f0c8a233912525
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 144, y: 246}
+  - name: ellipse_guide_Frame_0
+    originalName: 
+    pivot: {x: -1.3191489, y: -1.5333333}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 89
+      y: 320
+      width: 47
+      height: 30
+    spriteID: 7fbbd6f98bf79fa578131401d392812d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 89, y: 320}
+  - name: orbs_back_Frame_0
+    originalName: 
+    pivot: {x: -1.3191489, y: -3.6470585}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 204
+      y: 272
+      width: 47
+      height: 17
+    spriteID: a828850268d3dc1b1bfe918aeca6b5bb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 204, y: 272}
+  - name: orbs_Frame_0
+    originalName: 
+    pivot: {x: -1.1346154, y: -2.3888888}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 144
+      y: 272
+      width: 52
+      height: 18
+    spriteID: 01f2c40451d83b197b029af10ac08899
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 144, y: 272}
+  - name: ellipse_guide_Frame_0
+    originalName: 
+    pivot: {x: -1.2978723, y: -4.7666664}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 89
+      y: 358
+      width: 47
+      height: 30
+    spriteID: e248d98bd0d6b45bb8b45b3e1d6b18a3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 89, y: 358}
+  - name: orbs_back_Frame_0
+    originalName: 
+    pivot: {x: -1.2978723, y: -9.3529415}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 89
+      y: 396
+      width: 47
+      height: 17
+    spriteID: b59f96e6e92d4a0829c3009cd5c200ef
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 89, y: 396}
+  - name: orbs_Frame_0
+    originalName: 
+    pivot: {x: -1.1153847, y: -7.777778}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 144
+      y: 298
+      width: 52
+      height: 18
+    spriteID: 3b2c2648473ef68598a6cde2c55b56a4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 144, y: 298}
+  - name: ref_Frame_0
+    originalName: 
+    pivot: {x: -0.575, y: -0.9166667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 304
+      width: 40
+      height: 60
+    spriteID: 9f19088deddb3dfff88069234d49e355
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 304}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 557695997
-    name: capeman_prespectives
-    layerFlags: 0
+    guid: 1317222744
+    name: Layer 1
+    layerFlags: 3
     layerType: 0
     blendMode: 0
     cells:
-    - name: capeman_prespectives
+    - name: Layer 1
       frameIndex: 0
       cellRect:
         x: 6
         y: 11
         width: 237
-        height: 175
-      spriteId: bbe741de6e4088f27b101ee36a5da423
+        height: 156
+      spriteId: b0127ebb453a4a7fa8ea2253acbed8e2
     linkedCells: []
     parentIndex: -1
-  platformSettings: []
+  - layerIndex: 1
+    guid: 1000562387
+    name: br
+    layerFlags: 35
+    layerType: 1
+    blendMode: 0
+    cells: []
+    linkedCells: []
+    parentIndex: -1
+  - layerIndex: 4
+    guid: -625123595
+    name: capeman
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: capeman
+      frameIndex: 0
+      cellRect:
+        x: 114
+        y: 30
+        width: 29
+        height: 62
+      spriteId: 3c17cfaec3184dce8b4d40f1112a7272
+    linkedCells: []
+    parentIndex: 1
+  - layerIndex: 6
+    guid: 1666774214
+    name: b
+    layerFlags: 35
+    layerType: 1
+    blendMode: 0
+    cells: []
+    linkedCells: []
+    parentIndex: -1
+  - layerIndex: 9
+    guid: -625123592
+    name: capeman
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: capeman
+      frameIndex: 0
+      cellRect:
+        x: 17
+        y: 28
+        width: 40
+        height: 60
+      spriteId: b771bbf7a215cf757aa1270deba3a8c9
+    linkedCells: []
+    parentIndex: 6
+  - layerIndex: 11
+    guid: -1690239985
+    name: bl
+    layerFlags: 35
+    layerType: 1
+    blendMode: 0
+    cells: []
+    linkedCells: []
+    parentIndex: -1
+  - layerIndex: 14
+    guid: -625123585
+    name: capeman
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: capeman
+      frameIndex: 0
+      cellRect:
+        x: 117
+        y: 121
+        width: 29
+        height: 60
+      spriteId: 01b76c3457b8641e98f335ec22b8133f
+    linkedCells: []
+    parentIndex: 11
+  - layerIndex: 16
+    guid: 1666778194
+    name: t
+    layerFlags: 35
+    layerType: 1
+    blendMode: 0
+    cells: []
+    linkedCells: []
+    parentIndex: -1
+  - layerIndex: 19
+    guid: -625123614
+    name: capeman
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: capeman
+      frameIndex: 0
+      cellRect:
+        x: 18
+        y: 122
+        width: 40
+        height: 60
+      spriteId: 521920710c12619e099a7fa99d604de2
+    linkedCells: []
+    parentIndex: 16
+  - layerIndex: 21
+    guid: 1000566337
+    name: tr
+    layerFlags: 3
+    layerType: 1
+    blendMode: 0
+    cells: []
+    linkedCells: []
+    parentIndex: -1
+  - layerIndex: 24
+    guid: -625123607
+    name: capeman
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: capeman
+      frameIndex: 0
+      cellRect:
+        x: 198
+        y: 29
+        width: 30
+        height: 62
+      spriteId: 67fdce48f99bceb4d84fd52cb593b315
+    linkedCells: []
+    parentIndex: 21
+  - layerIndex: 26
+    guid: -1690236004
+    name: tl
+    layerFlags: 35
+    layerType: 1
+    blendMode: 0
+    cells: []
+    linkedCells: []
+    parentIndex: -1
+  - layerIndex: 29
+    guid: -625123604
+    name: capeman
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: capeman
+      frameIndex: 0
+      cellRect:
+        x: 199
+        y: 124
+        width: 30
+        height: 62
+      spriteId: e79b1f0aec02d825eb4e04a80c7ea0ab
+    linkedCells: []
+    parentIndex: 26
+  - layerIndex: 2
+    guid: -435240699
+    name: ellipse_guide
+    layerFlags: 2
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: ellipse_guide
+      frameIndex: 0
+      cellRect:
+        x: 104
+        y: 47
+        width: 47
+        height: 30
+      spriteId: 52bfaa69f8215de5695bdb043d25c315
+    linkedCells: []
+    parentIndex: 1
+  - layerIndex: 3
+    guid: 1411199453
+    name: orbs_back
+    layerFlags: 2
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: orbs_back
+      frameIndex: 0
+      cellRect:
+        x: 104
+        y: 63
+        width: 47
+        height: 17
+      spriteId: 208fe8096f1c93662abd78bcb82ae987
+    linkedCells: []
+    parentIndex: 1
+  - layerIndex: 5
+    guid: -1910334583
+    name: orbs
+    layerFlags: 2
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: orbs
+      frameIndex: 0
+      cellRect:
+        x: 101
+        y: 44
+        width: 52
+        height: 18
+      spriteId: 7fc58486a27c4651bb522d1fd6d7493a
+    linkedCells: []
+    parentIndex: 1
+  - layerIndex: 7
+    guid: -435240704
+    name: ellipse_guide
+    layerFlags: 2
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: ellipse_guide
+      frameIndex: 0
+      cellRect:
+        x: 14
+        y: 53
+        width: 47
+        height: 30
+      spriteId: c0221198399ff7aba9ee2eadeff9d9ad
+    linkedCells: []
+    parentIndex: 6
+  - layerIndex: 8
+    guid: 1411199446
+    name: orbs_back
+    layerFlags: 2
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: orbs_back
+      frameIndex: 0
+      cellRect:
+        x: 14
+        y: 69
+        width: 47
+        height: 17
+      spriteId: 3e7cc9ad24e0a6f9b87b3325c90b7646
+    linkedCells: []
+    parentIndex: 6
+  - layerIndex: 10
+    guid: -1910334586
+    name: orbs
+    layerFlags: 2
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: orbs
+      frameIndex: 0
+      cellRect:
+        x: 11
+        y: 50
+        width: 52
+        height: 18
+      spriteId: 95854bf957ab916719ddca362b479eaf
+    linkedCells: []
+    parentIndex: 6
+  - layerIndex: 12
+    guid: -435240693
+    name: ellipse_guide
+    layerFlags: 2
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: ellipse_guide
+      frameIndex: 0
+      cellRect:
+        x: 109
+        y: 138
+        width: 47
+        height: 30
+      spriteId: 62d82a7c5bd43dc7ba150997f46fd68c
+    linkedCells: []
+    parentIndex: 11
+  - layerIndex: 13
+    guid: 1411199443
+    name: orbs_back
+    layerFlags: 2
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: orbs_back
+      frameIndex: 0
+      cellRect:
+        x: 109
+        y: 154
+        width: 47
+        height: 17
+      spriteId: 9d9957b17e1cd2df0aecfc6087f97b1a
+    linkedCells: []
+    parentIndex: 11
+  - layerIndex: 15
+    guid: -1910334589
+    name: orbs
+    layerFlags: 2
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: orbs
+      frameIndex: 0
+      cellRect:
+        x: 106
+        y: 135
+        width: 52
+        height: 18
+      spriteId: a1e27ed29612dfdfc8af8667979fd586
+    linkedCells: []
+    parentIndex: 11
+  - layerIndex: 17
+    guid: -435240682
+    name: ellipse_guide
+    layerFlags: 2
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: ellipse_guide
+      frameIndex: 0
+      cellRect:
+        x: 15
+        y: 141
+        width: 47
+        height: 30
+      spriteId: 69d9edc7d0d0c386c9225b952ee84aed
+    linkedCells: []
+    parentIndex: 16
+  - layerIndex: 18
+    guid: 1411199436
+    name: orbs_back
+    layerFlags: 2
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: orbs_back
+      frameIndex: 0
+      cellRect:
+        x: 15
+        y: 157
+        width: 47
+        height: 17
+      spriteId: d8a8e165621b2ced0a9c39e2e018ab4d
+    linkedCells: []
+    parentIndex: 16
+  - layerIndex: 20
+    guid: -1910334568
+    name: orbs
+    layerFlags: 2
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: orbs
+      frameIndex: 0
+      cellRect:
+        x: 12
+        y: 138
+        width: 52
+        height: 18
+      spriteId: 4daf42ae426a060c79f0c8a233912525
+    linkedCells: []
+    parentIndex: 16
+  - layerIndex: 22
+    guid: -435240687
+    name: ellipse_guide
+    layerFlags: 2
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: ellipse_guide
+      frameIndex: 0
+      cellRect:
+        x: 190
+        y: 46
+        width: 47
+        height: 30
+      spriteId: 7fbbd6f98bf79fa578131401d392812d
+    linkedCells: []
+    parentIndex: 21
+  - layerIndex: 23
+    guid: 1411199433
+    name: orbs_back
+    layerFlags: 2
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: orbs_back
+      frameIndex: 0
+      cellRect:
+        x: 190
+        y: 62
+        width: 47
+        height: 17
+      spriteId: a828850268d3dc1b1bfe918aeca6b5bb
+    linkedCells: []
+    parentIndex: 21
+  - layerIndex: 25
+    guid: -1910334571
+    name: orbs
+    layerFlags: 2
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: orbs
+      frameIndex: 0
+      cellRect:
+        x: 187
+        y: 43
+        width: 52
+        height: 18
+      spriteId: 01f2c40451d83b197b029af10ac08899
+    linkedCells: []
+    parentIndex: 21
+  - layerIndex: 27
+    guid: -435240676
+    name: ellipse_guide
+    layerFlags: 2
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: ellipse_guide
+      frameIndex: 0
+      cellRect:
+        x: 189
+        y: 143
+        width: 47
+        height: 30
+      spriteId: e248d98bd0d6b45bb8b45b3e1d6b18a3
+    linkedCells: []
+    parentIndex: 26
+  - layerIndex: 28
+    guid: 1411199426
+    name: orbs_back
+    layerFlags: 2
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: orbs_back
+      frameIndex: 0
+      cellRect:
+        x: 189
+        y: 159
+        width: 47
+        height: 17
+      spriteId: b59f96e6e92d4a0829c3009cd5c200ef
+    linkedCells: []
+    parentIndex: 26
+  - layerIndex: 30
+    guid: -1910334574
+    name: orbs
+    layerFlags: 2
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: orbs
+      frameIndex: 0
+      cellRect:
+        x: 186
+        y: 140
+        width: 52
+        height: 18
+      spriteId: 3b2c2648473ef68598a6cde2c55b56a4
+    linkedCells: []
+    parentIndex: 26
+  - layerIndex: 31
+    guid: 1290764738
+    name: ref
+    layerFlags: 2
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: ref
+      frameIndex: 0
+      cellRect:
+        x: 151
+        y: 55
+        width: 40
+        height: 60
+      spriteId: 9f19088deddb3dfff88069234d49e355
+    linkedCells: []
+    parentIndex: -1
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Server
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Android
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: iPhone
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: WebGL
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
   secondarySpriteTextures: []
   spritePackingTag: 
   canvasSize: {x: 256, y: 214}

@@ -7,11 +7,11 @@ public class PlayerController : MonoBehaviour
     public Player player;
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Q)) { player.goNorthWest(); }
-        if (Input.GetKeyDown(KeyCode.W)) { player.goNorth(); }
-        if (Input.GetKeyDown(KeyCode.E)) { player.goNorthEast(); } 
-        if (Input.GetKeyDown(KeyCode.A)) { player.goSouthWest(); }
-        if (Input.GetKeyDown(KeyCode.S)) { player.goSouth(); }
-        if (Input.GetKeyDown(KeyCode.D)) { player.goSouthEast(); }
+        if (Input.GetKey(KeyCode.Q)) { player.goNorthWest(); enabled = false; }
+        if (Input.GetKey(KeyCode.W)) { player.goNorth(); enabled = false; }
+        if (Input.GetKey(KeyCode.E)) { player.goNorthEast(); enabled = false; }
+        if (Input.GetKey(KeyCode.A)) { player.goSouthWest(); enabled = false; }
+        if (Input.GetKey(KeyCode.S)) { player.goSouth(); enabled = false; }
+        if (Input.GetKey(KeyCode.D)) { player.goSouthEast(); enabled = false; }
     }
 }

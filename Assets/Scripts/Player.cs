@@ -16,11 +16,9 @@ public class Player : FTCharacter
         moved += handleMoved;
     }
 
-    private void handleMoved()
+    private new void handleMoved(Direction dir)
     {
-        controller.enabled = false;
         moved -= handleMoved;
-        steps -= 1;
-        stepTaken();
+        base.handleMoved(dir);
     }
 }

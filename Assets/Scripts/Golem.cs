@@ -5,14 +5,15 @@ using UnityEngine;
 public class Golem : FTCharacter
 {
 
-    public override void takeStep() {
-        Invoke("_takeStep", 0.75f);
+    private void Start()
+    {
+        transform.position = FTGrid.GetCellCenterWorld(currentPos);
     }
 
-    public void _takeStep()
+    public override void takeStep()
     {
 
-        int idx = Random.Range(0,6);
+        int idx = Random.Range(0, 6);
         switch (idx)
         {
             case 0:
@@ -35,8 +36,6 @@ public class Golem : FTCharacter
                 break;
 
         }
-        steps -= 1;
-        stepTaken();
-
+        moved += handleMoved;
     }
 }
