@@ -21,6 +21,11 @@ public class FTGrid : MonoBehaviour
         return instance.grid.GetCellCenterLocal(cellPosition);
     }
 
+    public static Vector3Int WorldToCell(Vector3 pos)
+    {
+        return instance.grid.WorldToCell(pos);
+    }
+
     public static Tilemap[] Tilemaps { get {
         return instance.grid.GetComponentsInChildren<Tilemap>(true);
     } }

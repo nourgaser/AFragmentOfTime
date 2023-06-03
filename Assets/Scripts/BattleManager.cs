@@ -1,41 +1,34 @@
 using System.Collections;
 using System.Collections.Generic;
 using System;
+using System.Linq;
 using UnityEngine;
 
 public class BattleManager : MonoBehaviour
 {
-    public FTCharacter[] characters;
-    FTCharacter currentCharacter { get { return characters[idx]; } }
+    public ICharacter[] characters;
+    ICharacter CurrentCharacter { get { return characters[idx]; } }
+    public int idx = 0;
+
     private void Start()
     {
-        currentCharacter.stepTaken += handleStep;
-        currentCharacter.takeStep();
-
+        characters = FindObjectsOfType<MonoBehaviour>().OfType<ICharacter>().ToArray();
+        TimeStep();
     }
-
-    private void handleStep()
+    
+    async void TimeStep()
     {
-        if (currentCharacter.steps != 0)
+        while (true)
         {
-            currentCharacter.takeStep();
-        }
-        else
-        {
-            currentCharacter.stepTaken -= handleStep;
-            getNextCharacter();
-            currentCharacter.steps = currentCharacter.maxSteps;
-            currentCharacter.stepTaken += handleStep;
-            handleStep();
+            await CurrentCharacter.DoActionAsync();
+            if (CurrentCharacter.NumOfActions == 0) getNextCharacter();
         }
     }
 
-    public int idx = 0;
     private void getNextCharacter()
     {
         idx++;
         if (idx > characters.Length - 1) idx = 0;
+        CurrentCharacter.NumOfActions = CurrentCharacter.MaxNumOfActions;
     }
-
-
 }

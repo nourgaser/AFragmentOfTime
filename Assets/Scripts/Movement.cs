@@ -4,42 +4,16 @@ using UnityEngine;
 using UnityEngine.Tilemaps;
 using System;
 public enum Direction { NORTH, SOUTH, NORTHEAST, NORTHWEST, SOUTHEAST, SOUTHWEST }
-abstract public class FTMoveableObject : FTGameObject
+public class Movement: MonoBehaviour
 {
-
-    public Action<Direction> startedMoving;
-    public Action<Direction> moved;
-
-    [SerializeField] float speed = 1f;
-    [SerializeField] bool isMoving = false;
-    [SerializeField] Vector3 targetWorldPoisition;
-
-
-    protected virtual void Update()
+    Vector3Int currentPos = Vector3Int.zero;
+    
+    protected void _Move(Vector3 pos, Direction dir)
     {
-        if (isMoving)
-        {
-            transform.position = Vector3.MoveTowards(transform.position, targetWorldPoisition, Time.deltaTime * speed);
-            if (transform.position == targetWorldPoisition) EndMove();
-        }
+        transform.position = pos;
     }
 
-    Direction currDir;
-    protected void Move(Vector3 pos, Direction dir)
-    {
-        isMoving = true;
-        targetWorldPoisition = pos;
-        currDir = dir;
-        startedMoving?.Invoke(dir);
-    }
-
-    void EndMove()
-    {
-        isMoving = false;
-        moved?.Invoke(currDir);
-    }
-
-    public void goNorth()
+    private void goNorth()
     {
         var temp = currentPos;
         temp.x += 1;
@@ -47,9 +21,9 @@ abstract public class FTMoveableObject : FTGameObject
         {
             currentPos = temp;
         }
-        Move(FTGrid.GetCellCenterWorld(currentPos), Direction.NORTH);
+        _Move(FTGrid.GetCellCenterWorld(currentPos), Direction.NORTH);
     }
-    public void goSouth()
+    private void goSouth()
     {
         var temp = currentPos;
         temp.x -= 1;
@@ -57,9 +31,9 @@ abstract public class FTMoveableObject : FTGameObject
         {
             currentPos = temp;
         }
-        Move(FTGrid.GetCellCenterWorld(currentPos), Direction.SOUTH);
+        _Move(FTGrid.GetCellCenterWorld(currentPos), Direction.SOUTH);
     }
-    public void goNorthEast()
+    private void goNorthEast()
     {
         var temp = currentPos;
         if (temp.y % 2 != 0) temp.x += 1;
@@ -68,9 +42,9 @@ abstract public class FTMoveableObject : FTGameObject
         {
             currentPos = temp;
         }
-        Move(FTGrid.GetCellCenterWorld(currentPos), Direction.NORTHEAST);
+        _Move(FTGrid.GetCellCenterWorld(currentPos), Direction.NORTHEAST);
     }
-    public void goNorthWest()
+    private void goNorthWest()
     {
         var temp = currentPos;
         if (temp.y % 2 != 0) temp.x += 1;
@@ -79,9 +53,9 @@ abstract public class FTMoveableObject : FTGameObject
         {
             currentPos = temp;
         }
-        Move(FTGrid.GetCellCenterWorld(currentPos), Direction.NORTHWEST);
+        _Move(FTGrid.GetCellCenterWorld(currentPos), Direction.NORTHWEST);
     }
-    public void goSouthEast()
+    private void goSouthEast()
     {
         var temp = currentPos;
         if (temp.y % 2 == 0) temp.x -= 1;
@@ -90,9 +64,9 @@ abstract public class FTMoveableObject : FTGameObject
         {
             currentPos = temp;
         }
-        Move(FTGrid.GetCellCenterWorld(currentPos), Direction.SOUTHEAST);
+        _Move(FTGrid.GetCellCenterWorld(currentPos), Direction.SOUTHEAST);
     }
-    public void goSouthWest()
+    private void goSouthWest()
     {
         var temp = currentPos;
         if (temp.y % 2 == 0) temp.x -= 1;
@@ -101,9 +75,32 @@ abstract public class FTMoveableObject : FTGameObject
         {
             currentPos = temp;
         }
-        Move(FTGrid.GetCellCenterWorld(currentPos), Direction.SOUTHWEST);
+        _Move(FTGrid.GetCellCenterWorld(currentPos), Direction.SOUTHWEST);
     }
-
+    public void Move(Direction dir)
+    {
+        switch (dir)
+        {
+            case Direction.NORTH:
+                goNorth();
+                break;
+            case Direction.SOUTH:
+                goSouth();
+                break;
+            case Direction.NORTHEAST:
+                goNorthEast();
+                break;
+            case Direction.NORTHWEST:
+                goNorthWest();
+                break;
+            case Direction.SOUTHEAST:
+                goSouthEast();
+                break;
+            case Direction.SOUTHWEST:
+                goSouthWest();
+                break;
+        }
+    }
     public bool isValidMove(Vector3Int pos)
     {
         Tilemap tilemap = FTGrid.Tilemaps[0];
