@@ -1,3 +1,4 @@
+using System.Threading.Tasks;
 using System.Collections;
 using System.Collections.Generic;
 using System;
@@ -22,6 +23,7 @@ public class BattleManager : MonoBehaviour
         {
             await CurrentCharacter.DoActionAsync();
             if (CurrentCharacter.NumOfActions == 0) getNextCharacter();
+            await Task.Delay(200);
         }
     }
 
