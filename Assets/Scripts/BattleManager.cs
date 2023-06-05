@@ -7,30 +7,81 @@ using UnityEngine;
 
 public class BattleManager : MonoBehaviour
 {
-    public ICharacter[] characters;
-    ICharacter CurrentCharacter { get { return characters[idx]; } }
-    public int idx = 0;
+    private SortedDictionary<int, ICharacter> characters;
+    private HashSet<IUsesTimeline> automaticTimelineObjects;
+    private int currentPriority = 1;
+
+    private void Awake()
+    {
+        automaticTimelineObjects = new HashSet<IUsesTimeline>();
+        characters = new SortedDictionary<int, ICharacter>();
+
+        FTObject.created += (obj => HandleCreated(obj));
+        FTObject.destroyed += (obj => HandleDestroyed(obj));
+    }
 
     private void Start()
     {
-        characters = FindObjectsOfType<MonoBehaviour>().OfType<ICharacter>().ToArray();
-        TimeStep();
+        GameLoop();
     }
-    
-    async void TimeStep()
+
+    async void GameLoop()
     {
         while (true)
         {
-            await CurrentCharacter.DoActionAsync();
-            if (CurrentCharacter.NumOfActions == 0) getNextCharacter();
-            await Task.Delay(200);
+            await characters[currentPriority].DoActionAsync();
+
+            foreach (var obj in automaticTimelineObjects)
+            {
+                obj.DoTimeStep();
+            }
+
+            if (characters[currentPriority].NumOfActions == 0) GetNextCharacter();
+            await Task.Delay(100);
         }
     }
 
-    private void getNextCharacter()
+    private void GetNextCharacter()
     {
-        idx++;
-        if (idx > characters.Length - 1) idx = 0;
-        CurrentCharacter.NumOfActions = CurrentCharacter.MaxNumOfActions;
+        currentPriority = GetNextPriority();
+        characters[currentPriority].NumOfActions = characters[currentPriority].MaxNumOfActions;
+    }
+
+    public void HandleCreated(FTObject obj)
+    {
+        var t = obj.GetComponent<IUsesTimeline>();
+        if (t != null && t.Automatic) automaticTimelineObjects.Add(t);
+
+        ICharacter characterToAdd = obj.GetComponent<ICharacter>();
+        if (characterToAdd != null)
+        {
+            int priority = characters.Count > 0 ? characters.Last().Key+1 : 1;
+            characterToAdd.Priority = priority;
+            characters.Add(priority, characterToAdd);
+        }
+    }
+
+    public void HandleDestroyed(FTObject obj)
+    {
+        var t = obj.GetComponent<IUsesTimeline>();
+        if (t != null && t.Automatic) automaticTimelineObjects.Remove(t);
+
+        ICharacter characterToRemove = obj.GetComponent<ICharacter>();
+        if (characterToRemove != null) {
+            characters.Remove(characterToRemove.Priority);
+            if (characterToRemove.Priority == currentPriority) GetNextCharacter();
+        }
+    }
+
+    private int GetNextPriority()
+    {
+        var t = characters.Keys.FirstOrDefault(key => key > currentPriority);
+        return t == 0 ? characters.First().Key : t;
+    }
+
+    private int GetPreviousPriority()
+    {
+        var t = characters.Keys.LastOrDefault(key => key < currentPriority);
+        return t == 0 ? characters.Last().Key : t;
     }
 }

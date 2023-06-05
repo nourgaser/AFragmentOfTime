@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3082802484327410210}
   m_Layer: 0
   m_Name: Golem
-  m_TagString: Untagged
+  m_TagString: FTObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -119,7 +119,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4297290bd1479509b3bd2ec414f7e06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movement: {fileID: 0}
+  <NumOfActions>k__BackingField: 1
+  <MaxNumOfActions>k__BackingField: 1
+  movement: {fileID: 3082802484327410210}
 --- !u!114 &3082802484327410210
 MonoBehaviour:
   m_ObjectHideFlags: 0

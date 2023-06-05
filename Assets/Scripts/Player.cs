@@ -3,10 +3,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player : MonoBehaviour, ICharacter
+public class Player : FTObject, ICharacter
 {
     [field: SerializeField] public int NumOfActions { get; set; } = 3;
     [field: SerializeField] public int MaxNumOfActions { get; set; } = 3;
+    public int Priority { get; set; }
 
     [SerializeField] PlayerController controller;
 
@@ -16,6 +17,6 @@ public class Player : MonoBehaviour, ICharacter
         await controller.DoActionAsync();
         controller.enabled = false;
         NumOfActions--;
-        await Task.Delay(150);
+        await Task.Delay(25);
     }
 }

@@ -7,5 +7,6 @@ public interface ICharacter
 {
     int NumOfActions { get; set; }
     int MaxNumOfActions { get; set; }
+    int Priority { get; set; }
     public Task DoActionAsync();
 }

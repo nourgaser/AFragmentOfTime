@@ -3,21 +3,29 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(Movement))]
+[RequireComponent(typeof(PlayerActions))]
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] Movement movement;
 
+    [SerializeField] PlayerActions actions;
     public async Task DoActionAsync()
     {
         while (true)
         {
-            if (Input.GetKey(KeyCode.Q)) { movement.Move(Direction.NORTHWEST); return; }
-            if (Input.GetKey(KeyCode.W)) { movement.Move(Direction.NORTH); return; }
-            if (Input.GetKey(KeyCode.E)) { movement.Move(Direction.NORTHEAST); return; }
-            if (Input.GetKey(KeyCode.A)) { movement.Move(Direction.NORTHWEST); return; }
-            if (Input.GetKey(KeyCode.S)) { movement.Move(Direction.SOUTH); return; }
-            if (Input.GetKey(KeyCode.D)) { movement.Move(Direction.SOUTHEAST); return; }
+            if (Input.GetKeyDown(KeyCode.Q) && Input.GetKey(KeyCode.LeftShift)) { actions.RangedAttack(Direction.NORTHWEST); return; }
+            if (Input.GetKeyDown(KeyCode.W) && Input.GetKey(KeyCode.LeftShift)) { actions.RangedAttack(Direction.NORTH); return; }
+            if (Input.GetKeyDown(KeyCode.E) && Input.GetKey(KeyCode.LeftShift)) { actions.RangedAttack(Direction.NORTHEAST); return; }
+            if (Input.GetKeyDown(KeyCode.A) && Input.GetKey(KeyCode.LeftShift)) { actions.RangedAttack(Direction.SOUTHWEST); return; }
+            if (Input.GetKeyDown(KeyCode.S) && Input.GetKey(KeyCode.LeftShift)) { actions.RangedAttack(Direction.SOUTH); return; }
+            if (Input.GetKeyDown(KeyCode.D) && Input.GetKey(KeyCode.LeftShift)) { actions.RangedAttack(Direction.SOUTHEAST); return; }
+
+            if (Input.GetKeyDown(KeyCode.Q)) { actions.Move(Direction.NORTHWEST); return; }
+            if (Input.GetKeyDown(KeyCode.W)) { actions.Move(Direction.NORTH); return; }
+            if (Input.GetKeyDown(KeyCode.E)) { actions.Move(Direction.NORTHEAST); return; }
+            if (Input.GetKeyDown(KeyCode.A)) { actions.Move(Direction.SOUTHWEST); return; }
+            if (Input.GetKeyDown(KeyCode.S)) { actions.Move(Direction.SOUTH); return; }
+            if (Input.GetKeyDown(KeyCode.D)) { actions.Move(Direction.SOUTHEAST); return; }
+
             await Async.WaitOneFrame();
         }
     }
