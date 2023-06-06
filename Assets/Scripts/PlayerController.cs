@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour
 {
 
     [SerializeField] PlayerActions actions;
-    public async Task DoActionAsync()
+    public async Task WaitForActionAsync()
     {
         while (true)
         {

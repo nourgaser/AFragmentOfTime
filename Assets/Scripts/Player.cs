@@ -14,7 +14,7 @@ public class Player : FTObject, ICharacter
     public async Task DoActionAsync()
     {
         controller.enabled = true;
-        await controller.DoActionAsync();
+        await controller.WaitForActionAsync();
         controller.enabled = false;
         NumOfActions--;
         await Task.Delay(25);
