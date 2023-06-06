@@ -122,6 +122,9 @@ MonoBehaviour:
   <NumOfActions>k__BackingField: 1
   <MaxNumOfActions>k__BackingField: 1
   movement: {fileID: 3082802484327410210}
+  <Health>k__BackingField: 2
+  <MaxHealth>k__BackingField: 2
+  <Priority>k__BackingField: 0
 --- !u!114 &3082802484327410210
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -12,14 +12,14 @@ public class PlayerActions : MonoBehaviour
     [SerializeField] RangedAttack rangedAttack;
 
 
-    public void Move(Direction dir)
+    public bool Move(Direction dir)
     {
-        movement.Move(dir);
+        return movement.Move(dir);
     }
 
-    public void RangedAttack(Direction dir)
+    public bool RangedAttack(Direction dir)
     {
-        rangedAttack.SpawnOrb(dir);
+        return rangedAttack.SpawnOrb(dir);
     }
 
 }

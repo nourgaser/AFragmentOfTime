@@ -10,34 +10,26 @@ public class Enemy : FTObject, ICharacter, ICanTakeDamage
     [field: SerializeField] public int NumOfActions { get; set; } = 1;
     [field: SerializeField] public int MaxNumOfActions { get; set; } = 1;
     [SerializeField] Movement movement;
-    
+
     [field: SerializeField] public int Health { get; set; } = 2;
     [field: SerializeField] public int MaxHealth { get; set; } = 2;
     [field: SerializeField] public int Priority { get; set; }
 
     public async Task DoActionAsync()
     {
-        int choice = UnityEngine.Random.Range(0, 6);
-        switch (choice)
+        List<Direction> legalDirections = new List<Direction>();
+        foreach (var direction in Enum.GetValues(typeof(Direction)))
         {
-            case 0:
-                movement.Move(Direction.NORTH);
-                break;
-            case 1:
-                movement.Move(Direction.NORTHEAST);
-                break;
-            case 2:
-                movement.Move(Direction.NORTHWEST);
-                break;
-            case 3:
-                movement.Move(Direction.SOUTH);
-                break;
-            case 4:
-                movement.Move(Direction.SOUTHEAST);
-                break;
-            case 5:
-                movement.Move(Direction.SOUTHWEST);
-                break;
+            var neighbour = FTGrid.GetNeighbour(transform.position, (Direction)direction);
+            if (FTGrid.IsWalkable(neighbour))
+            {
+                legalDirections.Add((Direction)direction);
+            }
+        }
+        if (legalDirections.Count > 0)
+        {
+            int choice = UnityEngine.Random.Range(0, legalDirections.Count);
+            movement.Move(legalDirections[choice]);
         }
         NumOfActions--;
         await Task.Delay(25);

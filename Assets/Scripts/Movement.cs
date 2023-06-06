@@ -9,21 +9,22 @@ public class Movement : MonoBehaviour
 
     public static Action<Vector3Int, Vector3Int, FTObject> moved;
 
-    private void Start() {
+    private void Start()
+    {
         currentPos = FTGrid.WorldToCell(transform.position);
         transform.position = FTGrid.GetCellCenterWorld(currentPos);
 
     }
 
-    public void Move(Direction dir)
+    public bool Move(Direction dir)
     {
         var newPos = FTGrid.GetNeighbour(currentPos, dir);
-        if (FTGrid.IsWalkable(newPos))
-        {
-            var oldPos = currentPos;
-            currentPos = newPos;
-            moved?.Invoke(oldPos, newPos, gameObject);
-        }
+        if (!FTGrid.IsWalkable(newPos)) return false;
+        
+        var oldPos = currentPos;
+        currentPos = newPos;
+        moved?.Invoke(oldPos, newPos, gameObject);
         transform.position = FTGrid.GetCellCenterWorld(currentPos);
+        return true;
     }
 }

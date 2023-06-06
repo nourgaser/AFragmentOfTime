@@ -4,7 +4,12 @@ using UnityEngine;
 
 public class RangedAttack : MonoBehaviour
 {
-    public void SpawnOrb(Direction dir){
-        Orb.Create(FTGrid.GetCellCenterWorld(FTGrid.GetNeighbour(transform.position, dir)), dir);
+    public bool SpawnOrb(Direction dir)
+    {
+        var neighbour = FTGrid.GetNeighbour(transform.position, dir);
+
+        if (FTGrid.IsOccupied(neighbour)) return false;
+
+        return Orb.Create(FTGrid.GetCellCenterWorld(neighbour), dir);
     }
 }

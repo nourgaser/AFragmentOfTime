@@ -36,10 +36,12 @@ public class Orb : FTObject, IUsesTimeline, ICanTakeDamage
         Debug.Log("Can't undo right now.");
     }
 
-    public static void Create(Vector3 worldPos, Direction dir)
+    public static bool Create(Vector3 worldPos, Direction dir)
     {
         Orb orb = GameObject.Instantiate((GameObject)Resources.Load("Prefabs/Orb"), worldPos, Quaternion.identity).GetComponent<Orb>();
         orb.direction = dir;
+
+        return true;
     }
 
     public void TakeDamage(int dmg)
